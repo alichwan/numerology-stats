@@ -26,6 +26,9 @@ jobs:
       - run: bun install --frozen-lockfile
       - run: bun run build
       - uses: actions/configure-pages@v5
+        with:
+          # create/enable the Pages site if it isn't configured yet
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
