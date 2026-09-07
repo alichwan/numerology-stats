@@ -24,7 +24,7 @@ function ArcanaChart({ data }: Props) {
           <XAxis dataKey="arcana" interval={0} tickLine={false}>
             <Label value="Arcano" position="bottom" offset={8} />
           </XAxis>
-          <YAxis allowDecimals={false} width={40} />
+          <YAxis allowDecimals={false} width={60} />
           <Tooltip
             formatter={(value) => [value as number, 'Veces']}
             labelFormatter={(arcana) => {
